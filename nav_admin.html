@@ -1,0 +1,69 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Styled Navigation Menu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="./company.css">
+
+</head>
+
+<body>
+  <div class="nav_bar">
+    <div class="nav-flex01">
+      <ul class="main-menu">
+        <li class="main-item"><a href="home.php">Home</a></li>
+        <li class="main-item"><a href="./rvw-gd-website01.php">contactsupervisor</a>
+
+        </li>
+        <li class="main-item">
+          <a href="./product.php">Overzicht</a>
+          
+        </li>
+
+        <li class="main-item">
+          <a href="./shw-all-product.php">producten</a>
+          
+        </li>
+
+        <li class="main-item"><a href="./shw-all-client.php">clienten</a>
+     
+
+    </li>
+    <li class="main-item"><a href="./shw-all-supplier.php">suppliers</a>
+ 
+    </li>
+    <li class="main-item"><a href=".//catagory.php">bestellingen</a>
+    
+      </li>
+    </li>
+    <li class="main-item"><a href="./stat-history.php">history</a>
+      </ul>
+    </div>
+
+   
+      <section class="container" id="mainBox">
+
+          <h1>
+            <a href="#">
+              <span class="aanmaken">
+                <?php if (isset($_SESSION['user_img'])) : ?>
+                <img src="<?php echo $_SESSION['user_img']; ?>" alt="">
+                <?php endif; ?>
+                <?php if (isset($_SESSION['user_id'])) : ?>
+                <?php echo "Welcome " . $_SESSION['username']; ?>
+                <?php endif; ?>
+              </span>
+            </a>&nbsp; &nbsp; &nbsp; &nbsp; 
+            <a href="./scripts/logout.php">
+              <span class="login"><i class="fa-solid fa-right-from-bracket"></i></span>
+            </a>
+          </h1>
+
+      </section>
+ 
+  
+  </body>
+
+  
+
+
+</body>

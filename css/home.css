@@ -1,0 +1,279 @@
+@charset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0;
+
+
+  body {
+    margin: 0 auto;
+    background-image: url(../images/mae-mu-Emhz3miT6mo-unsplash.jpg);
+    font-family: Arial;
+    color: #ffffff;
+  background-size:inherit;
+  background-repeat: no-repeat;
+  background-position: center;
+  backdrop-filter: blur(50px);
+}
+@media screen and (min-width: 5in) {
+  .container {
+    transform: scale(1); /*change for msc*/
+  }
+}
+
+@-webkit-keyframes slideBackground {
+
+}
+
+@keyframes slideBackground {
+
+}
+
+
+h1 {
+  color: #ffffff;
+}
+
+header {
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+
+
+}
+
+main {
+  width: 100%;
+  margin: 40px auto;
+}
+
+main p {
+  margin: 15px auto;
+  font-size: 150%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-item ul li {
+  position: relative;
+  padding: 10px;
+  display: inline-block;
+}
+li {
+  position: relative;
+}
+
+/*li:hover a {*/
+/*  background-color: blue;*/
+/*}*/
+
+a {
+  color: #dfd9e2;
+  text-decoration: none;
+}
+
+.main-item {
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  padding: 5px;
+  margin-right: 10px;
+
+}
+
+.main-item li a:hover {
+  color: #ffffff;
+}
+
+.nav-flex01,
+.main-menu {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  color: #dfd9e2;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+li:hover > ul {
+  display: block;
+}
+
+ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #7d5ba6;
+  width: 150px;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+ul ul ul {
+  left: 100%;
+  top: 0;
+}
+
+li.frstlvl > a {
+  font-weight: bold;
+}
+
+.scndlvl > a {
+  font-weight: normal;
+}
+
+.thrdlvl > a {
+  font-weight: normal;
+}
+
+.nav-flex01 > li {
+  margin-left: 20px;
+}
+
+.spacebelowabove {
+  margin: 2vh auto;
+}
+
+.centerflex {
+  display: flex;
+  justify-content: center;
+}
+
+.flexverticalcenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.flexverticalcenter h2{
+    margin-top: 10%;
+    margin-bottom: 2%;
+    font-family: Roboto;
+    font-size: 7rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #f4f6f8;
+    text-align: left;
+}
+.flexverticalcenter p{
+  margin-bottom: 30%;
+}
+.tableformat,
+.tableformat th,
+.tableformat td {
+  border: 1px solid;
+}
+
+.centercell {
+  text-align: center;
+}
+a{
+  color: #ffffff;
+}
+/*
+ */
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+
+.collector {
+  margin-left: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logintag {
+  width: 180px;
+  height: 25px;
+  margin-left: 15%;
+  font-size: smaller;
+  transform: rotate(-90deg);
+  background-color: #e81616fc;
+  backdrop-filter: blur(20px);
+  box-shadow: 41px 41px 81px #c67b12b7, -41px -41px 81px #312d28b7;
+}
+.login-container {
+  position: relative;
+  z-index: 1;
+
+  font-family: Arial, sans-serif;
+}
+
+
+
+.container {
+    top: -40px;
+  position: relative;
+  z-index: 1;
+  font-family: Arial, sans-serif;
+  width: 400px;
+  height: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #e8911600;
+  backdrop-filter: blur(50px);
+  box-shadow: 41px 41px 81px #c67b1242, -41px -41px 81px #c67b1242;
+  box-shadow: inset 0 0 0 0 #e89116;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.container, h1 {
+  text-align: center;
+  margin-top: -15px;
+}
+.container a{
+    color: #dfd9e2;
+}
+  .container:hover {
+    box-shadow: inset 250px 0 0 0 #8e5cb8;
+  }
+ .login:hover{
+   color: #03d8f4;
+  }
+  .aanmaken:hover{
+    color: #00ffff;
+  }
+
+.submit {
+  background-color: #c67b1200;
+  backdrop-filter: blur(50px);
+  padding: 10px 15px;
+  box-shadow: inset 0 0 0 0 #e89116;
+  color: #ffffff;
+  font-size: large;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  margin-top: 2 0vh;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.submit:hover {
+  box-shadow: inset 250px 0 0 0 #7334a6;
+}
+.main_log {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow:  5px 5px 10px #666666,
+    -5px -5px 10px #ffffff;
+
+
+}
+

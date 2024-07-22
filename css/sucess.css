@@ -1,0 +1,84 @@
+.success-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.circle-outline {
+    stroke-dasharray: 219;
+    stroke-dashoffset: 319;
+    animation: drawCircle 1.5s ease-out forwards;
+    opacity: 0;
+}
+
+.checkmark-path {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: drawCheckmark 2s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes drawCircle {
+    to {
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes drawCheckmark {
+    to {
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+}
+@keyframes blinkText {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.blink {
+    animation: blinkText 1s linear infinite;
+}
+@keyframes typing {
+    0% {
+        content: "🌕︎";
+    }
+    20% {
+        content: "🌖︎";
+    }
+    30% {
+        content: "🌗︎";
+    }
+    40% {
+        content: "🌘︎";
+    }
+    50% {
+        content: "🌑︎";
+    }
+    60% {
+        content: "🌒︎";
+    }
+    70% {
+        content: "🌓︎";
+    }
+    80% {
+        content: "🌔︎";
+    }
+    90% {
+        content: "🌕︎";
+    }
+    100% {
+        content: "🌕︎";
+    }
+}
+
+.typing-animation::after {
+    content: " ";
+    display: inline-block;
+    width: 1em;
+    animation: typing 1s steps(4) infinite;
+}

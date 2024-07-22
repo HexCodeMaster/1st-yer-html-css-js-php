@@ -1,0 +1,48 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Styled Navigation Menu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="./company.css">
+</head>
+
+<body>
+  <div class="nav_bar">
+    <div class="nav-flex01">
+      <ul class="main-menu">
+        <li class="main-item"><a href="home.php">Home</a></li>
+        <li class="main-item"><a href="./count-prod-per-cat.php"> bestelingen</a>
+        <li class="main-item"><a href="./product01_cli.php">producten</a>
+
+        </li>
+        <li class="main-item">
+          <a href="./support_cli.php">contact</a>
+
+        </li>
+
+      </div>
+
+   
+      <section class="container" id="mainBox">
+
+          <h1>
+            <a href="#">
+              <span class="aanmaken">
+                <?php if (isset($_SESSION['user_img'])) : ?>
+                <img src="<?php echo $_SESSION['user_img']; ?>" alt="">
+                <?php endif; ?>
+                <?php if (isset($_SESSION['user_id'])) : ?>
+                <?php echo "Welcome " . $_SESSION['user_id']; ?>
+                <?php endif; ?>
+              </span>
+              <a href="./scripts/logout.php">
+                <span class="login">&nbsp; &nbsp;  &nbsp; &nbsp;<i class="fa-solid fa-right-from-bracket"></i></span>
+              </a>
+            </a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+           
+          </h1><br>
+
+      </section>
+
+
+
+</body>
