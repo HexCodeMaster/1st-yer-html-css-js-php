@@ -1,8 +1,0 @@
-***
-session varabels
-$_SESSION["last_regenerated......session regestration time 
-session_regenerate_id......session regestration id
-$_SESSION['username']......session asmun super cli usernames / last_name
-$_SESSION['user_id']......session asmun super cli id
-$_SESSION['email'].....session asmun super exif_thumbnail
-****
